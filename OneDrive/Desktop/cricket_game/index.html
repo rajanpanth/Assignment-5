@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Cricket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<h1>Bat Ball Stump game</h1> 
+
+<div class="container">
+<button onclick="
+computerChoice();
+let result;
+if (choice === 'bat'){
+    result = 'its a tie'
+}
+else if (choice === 'ball'){
+    result = 'you lose'
+}
+else if (choice === 'stump'){
+    result = 'you win'
+}
+alert('computer choice is ' + choice + ' and you choosed BAT ' + 'so ' + result);
+">🏏Bat🏏</button>  
+
+
+
+<button onclick="
+computerChoice();
+if (choice === 'ball'){
+    result = 'its a tie'
+}
+else if (choice === 'bat'){
+    result = 'you lose'
+}
+else if (choice === 'stump'){
+    result = 'you win'
+}
+alert('computer choice is ' + choice + ' and you choosed BALL ' + 'so ' + result);
+">⚾Ball⚾</button>   
+
+
+<button
+onclick="
+computerChoice();
+if (choice === 'stump'){
+    result = 'its a tie'
+}
+else if (choice === 'ball'){
+    result = 'you lose'
+}
+else if (choice === 'bat'){
+    result = 'you win'
+}
+alert('computer choice is ' + choice + ' and you choosed STUMP ' + 'so ' + result);"
+>\|/ Stump \|/</button> 
+</div>
+
+<script>
+    let choice;
+function computerChoice(){
+    let randomnumber = Math.random() * 3;
+
+if (randomnumber > 0 && randomnumber <= 1){
+choice = 'bat';
+}
+else if (randomnumber > 1 && randomnumber <= 2){
+choice = 'ball';
+}
+else if (randomnumber > 2 && randomnumber <= 3){
+choice = 'stump';
+}
+}
+</script>
+</body>
+</html>

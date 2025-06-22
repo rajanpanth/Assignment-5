@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 2em;
+    color: green;
+    text-align: center;
+}
+button{
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+margin: 40px;
+width: 200px;
+}
+body{
+    background-color: rgb(182, 201, 209);
+    font-family: Arial, sans-serif;
+}
