@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
+    min-height: 100vh;
+
+background: #1c92d2; 
+background: -webkit-linear-gradient(to right, #f2fcfe, #1c92d2);  
+background: linear-gradient(to right, #f2fcfe, #1c92d2); 
+
+}
+
+.box {
+    height: 100px;
+    width: 200px;
+    border-radius: 10px;
+    margin: 20px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.first {
+    background-color: rgb(186, 142, 62);
+}
+
+.second {
+    background-color: rgb(46, 113, 46);
+}
+
+.third {
+    background-color: rgb(102, 21, 102);
+}
+
+.sticky-navbar {
+    height: 100px;
+    width: 40px;
+    background-color: rgb(250, 4, 4);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    left: 0; /* Makes it stick to the left when scrolling horizontally */
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+
+    margin: 20px;
+    justify-content: center;
+}
+.sticky-navbar1 {
+    height: 100px;
+    width: 40px;
+    background-color: rgb(46, 244, 6);
+    color: white;
+    padding: 10px;
+    position: sticky;
+    left: 0;
+    margin: 20px;
+    flex: 0 0 auto;  /* Or flex-shrink: 0 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* .sticky-navbar1 {
+    height: 100px;
+    width: 40px;
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    right: 0; /* Makes it stick to the left when scrolling horizontally */
+    /* flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; */
+
+
+#sticky-content {
+    width: 60%;
+    height: 120px;
+    background-color: rgba(223, 14, 14, 0.225);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    margin: 20px auto; 
+    border-radius: 10px; 
+    box-shadow: 4px 4px 10px black;
+
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px gray   
+}
