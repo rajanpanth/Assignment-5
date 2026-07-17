@@ -1,0 +1,12 @@
+# Cloned upstream repo (re-clonable; 1.4GB incl node_modules) — not part of research artifacts
+source/
+
+# JS / build junk
+node_modules/
+**/node_modules/
+target/
+dist/
+
+# OS junk
+.DS_Store
+Thumbs.db
